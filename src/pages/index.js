@@ -1,30 +1,18 @@
 
-import { Layout, Menu, Button } from 'antd';
+import { Layout, Image} from 'antd';
 import React, { useState } from 'react';
-const { Header, Sider, Content } = Layout;
+import logoBns from "../../public/logo_bns.svg"
+const { Header, Footer, Sider, Content } = Layout;
 
 export default function Home() {
   return (
-      <Layout className="layout ">
-        <Layout className="site-layout ">
-          <Header
-              className="site-layout-background"
-              style={{
-                padding: 0,
-              }}
-          >
-          </Header>
-          <Content
-              className="site-layout-background flex flex-row justify-center "
-              style={{
-                margin: '24px 16px',
-                padding: 24,
-                
-              }}
-          >
-            <Button type="primary">Bumi Nusantara Sehat</Button>
-          </Content>
-        </Layout>
+      <Layout className="h-[100vh] justify-center items-center bg-white">
+          <div className="w-screen flex h-auto justify-center items-center self-center">
+            <img
+              src="/logo_bns.svg"
+              className="w-4/5"
+            />
+          </div>
       </Layout>
   )
 }
